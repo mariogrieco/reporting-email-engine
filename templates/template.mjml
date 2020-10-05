@@ -15,8 +15,8 @@
 
     <mj-body width="733px" background-color="#fafafa">
             <mj-section>
-                <mj-column padding="0" margin="0">
-                    <mj-image width="80px" src="/images/union.svg" align="left" margin="0" padding="0" />
+                <mj-column padding="0">
+                    <mj-image width="80px" src="/images/union.svg" align="left" padding="0" />
                 </mj-column>
             </mj-section>
 
