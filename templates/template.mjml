@@ -1,22 +1,191 @@
 <mjml>
     <mj-head>
-        <mj-font name="Oxygen" href="" />
+        <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" />
         <mj-style>
             * {
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
             @media only screen and (min-width:480px) and (max-width:600px) {
-                @-ms-viewport { width:600px; }
-                @viewport { width:600px; }
+                @-ms-viewport { width:733px; }
+                @viewport { width:733px; }
             }
         </mj-style>
     </mj-head>
 
-    <mj-body>
+    <mj-body width="733px" background-color="#fafafa">
             <mj-section>
-               <mj-column>
-                    <mj-text>{{message}}</mj-text>
+               <mj-column width="70%" vertical-align="middle">
+                    <mj-text
+                        font-weight="500"
+                        color="#000000"
+                        font-size="28px"
+                        line-height="42px"
+                        letter-spacing="0.1px"
+                        align="left"
+                        padding-left="0"
+                        font-family="Poppins, sans-serif"
+                    >
+                    Cloudshim FinOps Report
+                    </mj-text>
+                </mj-column>
+                <mj-column width="30%" vertical-align="middle">
+                    <mj-text align="right"
+                        font-weight="400"
+                        font-size="16px"
+                        line-height="24px"
+                        letter-spacing="0.1px"
+                        color="#000000"
+                        padding-right="0"
+                        font-family="Poppins, sans-serif"
+                        font-weight="500"
+                    >
+                        {{date}}
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+
+
+            <mj-section>
+               <mj-column
+                width="48.5%"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                padding="15px 150px 150px 0px"
+                >
+
+                <mj-text
+                    color="#171725"
+                    font-size="16px"
+                    line-height="24px"
+                    letter-spacing="0.1px"
+                    font-family="Poppins, sans-serif"
+                    font-weight="500"
+                    >By Day</mj-text>
+
+                </mj-column>
+
+                <mj-column width="3%">
+                </mj-column>
+
+                <mj-column
+                    width="48.5%"
+                    vertical-align="middle"
+                    background-color="#FFFFFF"
+                    border-radius="16px"
+                    padding="15px 150px 150px 0px"
+                >
+                <mj-text
+                    color="#171725"
+                    font-size="16px"
+                    line-height="24px"
+                    letter-spacing="0.1px"
+                    font-family="Poppins, sans-serif"
+                >By Month</mj-text>
+
+                </mj-column>
+            </mj-section>
+
+
+
+
+            <mj-section>
+               <mj-column
+                width="48.5%"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                padding="0px 150px 150px 0px"
+                >
+                </mj-column>
+
+                <mj-column width="3%">
+                </mj-column>
+
+                <mj-column
+                    width="48.5%"
+                    vertical-align="middle"
+                    background-color="#FFFFFF"
+                    border-radius="16px"
+                    padding="15px 150px 150px 0px"
+                >
+                </mj-column>
+            </mj-section>
+
+            <mj-section>
+               <mj-column
+                width="100"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                >
+                </mj-column>
+                <mj-column
+                width="100"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                >
+                </mj-column>
+                <mj-column
+                width="100"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                >
+                </mj-column>
+                <mj-column
+                width="100"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                >
+                </mj-column>
+                <mj-column
+                width="100"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                >
+                </mj-column>
+            </mj-section>
+
+
+            <mj-section>
+               <mj-column
+                width="50%"
+                vertical-align="middle"
+                background-color="#FFFFFF"
+                border-radius="16px"
+                padding="15px 150px 150px 0px"
+                >
+
+                <mj-text
+                    color="#171725"
+                    font-size="16px"
+                    line-height="24px"
+                    letter-spacing="0.1px"
+                    font-family="Poppins, sans-serif"
+                    font-weight="500"
+                    >Recommendation</mj-text>
+
+                </mj-column>
+                <mj-column
+                    width="50%"
+                    vertical-align="middle"
+                    background-color="#FFFFFF"
+                    border-radius="16px"
+                    padding="15px 150px 150px 0px"
+                >
+                <mj-text
+                    color="#171725"
+                    font-size="16px"
+                    line-height="24px"
+                    letter-spacing="0.1px"
+                    font-family="Poppins, sans-serif"
+                >Last 30 days</mj-text>
+
                 </mj-column>
             </mj-section>
     </mj-body>

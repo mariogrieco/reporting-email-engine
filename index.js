@@ -3,6 +3,7 @@ const app = express();
 const handlebars = require('./middlewares/handlebars')
 const { render } = require('./helpers')
 
+app.use(express.static('public'));
 
 // THIS WILL REPLACED FOR THE LAMBDA INDEX
 

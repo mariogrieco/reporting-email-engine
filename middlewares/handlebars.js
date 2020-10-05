@@ -1,6 +1,6 @@
 const { compile } = require('handlebars')
 const path = require('path')
-
+const moment = require('moment')
 const fs = require('fs')
 
 module.exports = (req, res, next) => {
@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
 
   const template = compile(fs.readFileSync(uri, 'utf8'))
   const context = {
-      message: 'Hello World Template engine'
+      date: moment().format('LL')
   }
   const mjml = template(context)
 
